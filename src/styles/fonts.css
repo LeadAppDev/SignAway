@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;900&display=swap');
+@import url('./colors.css');
+
+:root {
+    --rubik: 'Rubik';
+}
+
+h1 {
+    font-family: var(--rubik);
+    font-size: 5.38em;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: var(--rubik);
+    font-size: 3.84em;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: var(--rubik);
+    font-size: 2.74em;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: var(--rubik);
+    font-size: 1.96em;
+    font-weight: 500;
+}
+
+h5 {
+    font-family: var(--rubik);
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+h6 {
+    font-family: var(--rubik);
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}
+
+p {
+    font-family: var(--rubik);
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+}

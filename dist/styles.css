@@ -1,0 +1,50 @@
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/fonts.css ***!
+  \************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;900&display=swap);
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/colors.css ***!
+  \*************************************************************************/
+:root {
+    --primary: tomato;
+}
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/fonts.css (1) ***!
+  \****************************************************************************/
+:root {
+    --rubik: 'Rubik';
+    color: --primary;
+}
+
+.rubik-regular {
+    font-family: var(--rubik);
+    font-weight: 400;
+}
+
+.rubik-medium {
+    font-family: var(--rubik);
+    font-weight: 500;
+}
+
+.rubik-semibold {
+    font-family: var(--rubik);
+    font-weight: 600;
+}
+
+.rubik-black {
+    font-family: var(--rubik);
+    font-weight: 900;
+}
+
+.large {
+    font-size: 100px;
+}
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/styles.css ***!
+  \*************************************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
