@@ -2,42 +2,134 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/fonts.css ***!
   \************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;900&display=swap);
+/*!********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Navigation/Navigation.css ***!
+  \********************************************************************************************/
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.15); */
+    padding: .8rem 2rem;
+    position: absolute;
+    width: 100%;
+}
+
+.navigation p {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.navigation--logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation--logo .line {
+    align-self: center;
+    background-color: #fff;
+    height: 4px;
+    width: 70px;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+}
+
+.navigation ul li {
+    margin: 0 8px;
+}
+
+.navigation ul li a {
+    color: #fff;
+    font-size: .9rem;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+/*!**************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/Landing_Page/Landing.css ***!
+  \**************************************************************************************/
+.landing {
+    background-image: radial-gradient(at 100% top, #5E35B1, #1D0C40);
+    height: 100vh;
+    width: 100%;
+}
+
+.landing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.image-section-one {
+    background-color: white;
+    height: 500px;
+    width: 400px;
+}
 /*!*************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/colors.css ***!
   \*************************************************************************/
 :root {
-    --primary: tomato;
+    --primary: #1a1a1a;
 }
 /*!****************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/fonts.css (1) ***!
   \****************************************************************************/
 :root {
     --rubik: 'Rubik';
-    color: --primary;
 }
 
-.rubik-regular {
+h1 {
     font-family: var(--rubik);
+    font-size: 5.38em;
     font-weight: 400;
 }
 
-.rubik-medium {
+h2 {
     font-family: var(--rubik);
+    font-size: 3.84em;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: var(--rubik);
+    font-size: 2.74em;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: var(--rubik);
+    font-size: 1.96em;
     font-weight: 500;
 }
 
-.rubik-semibold {
+h5 {
     font-family: var(--rubik);
+    font-size: 1.4em;
     font-weight: 600;
 }
 
-.rubik-black {
+h6 {
     font-family: var(--rubik);
-    font-weight: 900;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
 }
 
-.large {
-    font-size: 100px;
+p {
+    font-family: var(--rubik);
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
 }
 /*!*************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/styles.css ***!
@@ -46,5 +138,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f8f8f8;
+    font-family: var(--rubik);
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
 }

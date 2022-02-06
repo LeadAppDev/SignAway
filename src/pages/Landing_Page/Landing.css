@@ -1,0 +1,49 @@
+.container {
+    max-width: 800px;
+}
+
+.landing {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.landing-container {
+    background-color: red;
+    width: calc(100% - 4rem);
+}
+
+.image-section-one {
+    background-color: white;
+    height: 10px;
+}
+
+.image-section-one img {
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.image-section-one img:nth-child(1) {
+    height: 378px;
+    width: 250px;
+    position: absolute;
+    transform: rotate(-6deg);
+}
+
+.image-section-one img:nth-child(2) {
+    height: 278px;
+    width: 200px;
+    position: relative;
+    left: 220px;
+    top: 80px;
+    transform: rotate(20deg);
+}
+
+.image-section-one img:nth-child(3) {
+    height: 218px;
+    width: 160px;
+    position: relative;
+    left: -90px;
+    top: 200px;
+    transform: rotate(-15deg);
+}
