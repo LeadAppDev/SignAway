@@ -7,19 +7,49 @@ import img03 from '../../assets/images/img_03.jpg';
 
 const LandingPage = ({}) => {
     return(
-        <div className='container'>
+        
+        <div className="landing-container">
             <Navigation />
-            <div className="landing">
-                <div className="landing-container">
+
+            <section>
+                <div className='landing-container-grid'>
                     <div className="image-section-one">
-                        {/* <img src={img01} alt='img' />
-                        <img src={img02} alt='img' />
-                        <img src={img03} alt='img' /> */}
+                        <div>
+                            <img src={img01} alt='img' />
+                            <img src={img02} alt='img' />
+                            <img src={img03} alt='img' />
+                        </div>
+                    </div>
+                    <div className='landing-container-grid slogan'>
+                        <h3>Simply Easy </h3>
+                        <h3>Lease With Confidence</h3>
+                    </div>
+                    <div className='landing-container-grid saying'>
+                        <p>
+                            The ways people travel, work and live are blurring. 
+                            From product innovations, to the latest travel trends, 
+                            discover how the future of travel is 
+                            being shaped by SignAway.
+                        </p>
                     </div>
                 </div>
-            </div>
+            </section>
+            
         </div>
     )
 };
 
 export default LandingPage;
+
+// <div className='container'>
+        //     <div className="landing-grid">
+        //         <Navigation />
+        //         <div className='landing-content'>
+        //             <div className="image-section-one">
+        //                 <img src={img01} alt='img' />
+        //                 <img src={img02} alt='img' />
+        //                 <img src={img03} alt='img' />
+        //             </div>
+        //         </div>
+        //     </div>
+        // </div>

@@ -1,21 +1,21 @@
-.container {
-    max-width: 800px;
-}
-
-.landing {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-}
-
-.landing-container {
-    background-color: red;
-    width: calc(100% - 4rem);
+.landing-container-grid {
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "a b"
+    "a b"
+    "a c"
+    "a c"
+    ;
+    padding: 0 2rem;
 }
 
 .image-section-one {
-    background-color: white;
-    height: 10px;
+    grid-area: a;
+    margin: auto;
+    position: relative;
+    top: -100px;
 }
 
 .image-section-one img {
@@ -47,3 +47,125 @@
     top: 200px;
     transform: rotate(-15deg);
 }
+
+.landing-container-grid .slogan {
+    z-index: 100;
+    grid-template-columns: repeat(1, 1fr);
+    grid-area: b;
+    grid-template-areas: 
+        "a" 
+        "b"
+    ;
+}
+
+.landing-container-grid .slogan h3:first-child {
+    grid-area: a;
+    align-items: flex-end;
+    align-self: flex-end;
+    font-weight: 300;
+}
+
+.landing-container-grid .slogan h3:last-child{
+    grid-area: b;
+    width: 500px;
+}
+
+.landing-container-grid .slogan h3 {
+    color: #fff;
+}
+
+.landing-container-grid .saying {
+    grid-area: c;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.landing-container-grid .saying p {
+    background: rgba(0, 0, 0, 0.15);
+    font-weight: 400;
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    line-height: 1.5rem;
+    margin: auto 0;
+    max-width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
+    display: grid;
+    grid-template-columns: minmax(300px, 1200px);
+    justify-content: center;
+}
+
+.landing-grid {
+    height: 100vh;
+}
+
+.landing-content {
+    padding: 0 2rem;
+}
+
+.image-section-one {
+    background-color: white;
+}
+
+.image-section-one img {
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.image-section-one img:nth-child(1) {
+    height: 378px;
+    width: 250px;
+    position: absolute;
+    transform: rotate(-6deg);
+}
+
+.image-section-one img:nth-child(2) {
+    height: 278px;
+    width: 200px;
+    position: relative;
+    left: 220px;
+    top: 80px;
+    transform: rotate(20deg);
+}
+
+.image-section-one img:nth-child(3) {
+    height: 218px;
+    width: 160px;
+    position: relative;
+    left: -90px;
+    top: 200px;
+    transform: rotate(-15deg);
+} */

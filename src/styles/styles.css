@@ -13,5 +13,6 @@
 }
 
 body {
+    height: 100vh;
     background-image: radial-gradient(at 100% top, #5E35B1, #1D0C40);
 }
